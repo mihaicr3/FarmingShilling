@@ -44,3 +44,44 @@ footer {
     -webkit-text-fill-color: transparent;
     
 }
+
+
+.container_gradina {
+    
+    width: fit-content;
+    height: fit-content;
+  }
+
+.poza_gradina{
+    
+    transition: .5s ease;
+    max-height: 30vh;
+    max-width: 30vh;
+    
+}
+.middle_gradina {
+    transition: .5s ease;
+    opacity: 0;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: absolute;
+    transform: translate(0vh,-15vh);  
+    
+  }
+
+
+  .text_gradina {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px; 
+  }
+
+  .container_gradina:hover .poza_gradina{
+    opacity: 0.3;
+  }
+  
+  .container_gradina:hover .middle_gradina {
+    opacity: 1;
+  }
+  
