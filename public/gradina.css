@@ -1,0 +1,122 @@
+body{
+    background-color: #ffffcc; /* Light yellow background */
+    color: #006600; /* Dark green text */
+    font-family: Arial, sans-serif;
+    
+}
+header {
+    background-color: #ffcc00; /* Yellow background */
+    color: #006600; /* Dark green text */
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #009900; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #ffffff; /* White text */
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #ffcc00; /* Yellow background */
+    color: #006600; /* Dark green text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.gradina{
+    background: #a80077;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+.row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 6%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .container_poze {
+    position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.poza_rosie_1 {
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
+.cornhub {
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
+
+.middle_poze {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to make the text more readable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures .middle_gradina covers the entire image */
+    height: 100%;
+}
+
+.text_poze {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px; 
+}
+
+.container_poze:hover .poza_gradina {
+    opacity: 0.3;
+}
+
+.container_poze:hover .middle_poze {
+    opacity: 1;
+}
