@@ -9,7 +9,6 @@ header {
     color: #006600; /* Dark green text */
     padding: 10px;
     text-align: center;
-    
 }
 nav {
     background-color: #009900; /* Green background */
@@ -37,15 +36,16 @@ footer {
     width: 100%;
     bottom: 0;
 }
-.dealer{
-    background: #59C173;  /* fallback for old browsers */
-    
-    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.gradina{
+    background: #a80077;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+-webkit-text-fill-color: transparent;
+
+  
 }
+
 
 * {
     box-sizing: border-box;
@@ -59,67 +59,40 @@ footer {
     flex: 33.33%;
     padding: 6%;
   }
+  
 
 
 
 
 
 
-/* POZE PAGINA PRINCIPALA ------------------------------------------------------------------------------------*/
 
-.container_poze {
+
+
+  .container_poze {
     position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
     width: fit-content;
     height: fit-content;
 }
 
 
-.container_freezer
-{
-    position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
-    width: fit-content;
-    height: fit-content;
-    margin-left: 40%;
-}
-.poza_freezer_closed{
-    
-    position: absolute;
-    top: 0; /* Align to the top of the container */
-    left: 0; /* Align to the left of the container */
-    transition: .5s ease;
-    max-height: 40vh;
-    max-width: 40vh;
-}
-.poza_freezer_open{
-    top: 0; /* Align to the top of the container */
-    left: 0; /* Align to the left of the container */
-    position: absolute;
-
-    transition: .5s ease;
-    max-height: 40vh;
-    max-width: 40vh;
-    opacity: 0;
-}
-
-.container_freezer:hover .poza_freezer_closed
-{
-    opacity: 0;
-}
-.container_freezer:hover .poza_freezer_open
-{
-    opacity: 1;
-}
-.poza_pisic{
+.poza_rosie_1 {
     transition: .5s ease;
     max-height: 40vh;
     max-width: 40vh;
 }
 
-.poza_gradina {
+.bulion {
     transition: .5s ease;
     max-height: 40vh;
     max-width: 40vh;
 }
+.sos_rosii   {
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
 
 .middle_poze {
     position: absolute;
@@ -141,6 +114,11 @@ footer {
     color: white;
     font-size: 16px;
     padding: 16px 32px; 
+}
+.text_detalii{
+    color:red;
+    font-size:16px;
+
 }
 
 .container_poze:hover .poza_gradina {
