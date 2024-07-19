@@ -2,6 +2,7 @@ body{
     background-color: #ffffcc; /* Light yellow background */
     color: #006600; /* Dark green text */
     font-family: Arial, sans-serif;
+    
 }
 header {
     background-color: #ffcc00; /* Yellow background */
@@ -45,45 +46,106 @@ footer {
     
 }
 
+* {
+    box-sizing: border-box;
+  }
+.row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 6%;
+  }
 
-.container_gradina {
-    
+
+
+
+
+
+/* POZE PAGINA PRINCIPALA ------------------------------------------------------------------------------------*/
+
+.container_poze {
+    position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
     width: fit-content;
     height: fit-content;
-  }
-
-.poza_gradina{
-    
-    transition: .5s ease;
-    max-height: 30vh;
-    max-width: 30vh;
-    
 }
-.middle_gradina {
-    transition: .5s ease;
-    opacity: 0;
-    max-width: fit-content;
-    max-height: fit-content;
-    min-width: fit-content;
-    min-height: fit-content;
-    position: absolute;
-    transform: translate(12%,-15vh);  
+
+
+.container_freezer
+{
+    position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%;
+}
+.poza_freezer_closed{
     
-  }
+    position: absolute;
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+.poza_freezer_open{
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    position: absolute;
 
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+    opacity: 0;
+}
 
-  .text_gradina {
+.container_freezer:hover .poza_freezer_closed
+{
+    opacity: 0;
+}
+.container_freezer:hover .poza_freezer_open
+{
+    opacity: 1;
+}
+.poza_drum{
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
+.poza_gradina {
+    transition: .5s ease;
+    max-height: 40vh;
+    max-width: 40vh;
+}
+
+.middle_poze {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to make the text more readable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures .middle_gradina covers the entire image */
+    height: 100%;
+}
+
+.text_poze {
     background-color: #4CAF50;
     color: white;
     font-size: 16px;
     padding: 16px 32px; 
-  }
+}
 
-  .container_gradina:hover .poza_gradina{
+.container_poze:hover .poza_gradina {
     opacity: 0.3;
-  }
-  
-  .container_gradina:hover .middle_gradina {
+}
+
+.container_poze:hover .middle_poze {
     opacity: 1;
-  }
-  
+}
