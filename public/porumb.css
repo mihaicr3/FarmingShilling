@@ -55,15 +55,6 @@ footer {
   }
   
   /* Create three equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 6%;
-  }
-
-
-
-
-
 
 
 
@@ -78,45 +69,45 @@ footer {
 }
 
 
-.poza_rosie_1 {
-    transition: .5s ease;
-    max-height: 40vh;
+.poza_porumb_1{
+    display: block;
+    padding: inherit;
+    margin:auto;
+    max-height:40vh;
     max-width: 40vh;
 }
 
-.cornhub {
-    transition: .5s ease;
-    max-height: 40vh;
-    max-width: 40vh;
+#poza_porumb_pixel
+{ 
+    display: block;
+    padding: inherit;
+    margin:auto;
+    max-height:15vh;    
+    max-width: 15vh;
+        cursor: pointer;
+        position: absolute; 
+        top: 50vh; 
+        left: 50vh; 
+        transition: all 1s;
+      
+
 }
 
+.text_descriere{
 
-.middle_poze {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to make the text more readable */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures .middle_gradina covers the entire image */
-    height: 100%;
+    color: #006600; /* Dark green text */
+    background-color: #ffcc00; /* Yellow background */
+    margin-top: 20px;
+    text-align: center;
 }
-
-.text_poze {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px; 
+.frame{
+    width: 30vh;
+    height: 30vh;
+    text-align: center;
 }
-
-.container_poze:hover .poza_gradina {
-    opacity: 0.3;
-}
-
-.container_poze:hover .middle_poze {
-    opacity: 1;
+.centered-thing {
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

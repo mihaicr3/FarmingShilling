@@ -1,0 +1,72 @@
+body{
+    background-color: #ffffcc; /* Light yellow background */
+    color: #006600; /* Dark green text */
+    font-family: Arial, sans-serif;
+    
+}
+header {
+    background-color: #ffcc00; /* Yellow background */
+    color: #006600; /* Dark green text */
+    padding: 10px;
+    text-align: center;
+    
+}
+nav {
+    background-color: #009900; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #ffffff; /* White text */
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #ffcc00; /* Yellow background */
+    color: #006600; /* Dark green text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.dealer{
+    background: #59C173;  /* fallback for old browsers */
+    
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+.row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 6%;
+  }
+
+
+
+
+
+.text {
+    
+    color:  #006600;
+    text-align: center;
+}
+

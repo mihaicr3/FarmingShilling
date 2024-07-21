@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow and Green Themed Page</title>
+    <link rel="stylesheet" href="porumb.css">
+</head>
+
+<body>
+    <header>
+        <h1>Porumb</h1>
+        <h2>*crunchcrunchcrunch*</h2>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section>
+
+      <div>
+
+        <img class="poza_porumb_1" src="images/porumb1.jpg">
+        <div class="text_descriere">
+            Porumb
+            <br>
+            In functie de sezon oferim diferite tipuri de porumb
+            <br>
+            Vara avem porumb <i><b>pentru fiert</b></i>, de la 1 la 2 lei
+            <br>
+            Toamna avem boabe de porumb la kg, pretul depinzand de sezon
+
+        </div>
+
+        
+           
+
+
+
+      </div>
+      <img id="poza_porumb_pixel" onclick="moveCorn(   )" src="images/porumb_pixel.png">
+
+
+
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Crisan Mihai-George</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+<script>
+var object = document.getElementById('poza_porumb_pixel');
+xvalue=window.screen.availHeight;
+yvalue=window.screen.availWidth;
+touched=0;
+
+
+function changeBackgroundImage() {
+            console.log("Changing background image"); // Debugging line
+            document.body.style.backgroundImage = "url('images/backgroud_porumb.jpg')"; // Correct path to your image
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundRepeat = "no-repeat";
+        }
+
+
+object.onclick=function(){
+  var x = Math.floor(Math.random()*(xvalue-xvalue/10));
+  var y = Math.floor(Math.random()*(yvalue-yvalue/10));
+  object.style.top = x + 'px';
+  object.style.left = y + 'px';
+  touched++;
+
+
+
+
+  if(touched==5)
+  {
+    alert("NU MAI ATINGE PORUMBUL");
+  }
+  if(touched==10    )
+  {
+    changeBackgroundImage();
+  }
+};
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
