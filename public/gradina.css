@@ -1,95 +1,96 @@
-body{
+body {
     background-color: #ffffcc; /* Light yellow background */
     color: #006600; /* Dark green text */
-    font-family: Arial, sans-serif;
-    
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 header {
     background-color: #ffcc00; /* Yellow background */
     color: #006600; /* Dark green text */
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav {
     background-color: #009900; /* Green background */
     color: #ffffff; /* White text */
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav a {
     color: #ffffff; /* White text */
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
+
 nav a:hover {
     text-decoration: underline;
+    color: #ffffcc;
 }
+
 section {
-    padding: 20px;
+    padding: 30px;
+    line-height: 1.6;
 }
+
 footer {
     background-color: #ffcc00; /* Yellow background */
     color: #006600; /* Dark green text */
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    position: flex;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
-.gradina{
-    background: #a80077;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.gradina {
+    background: linear-gradient(to right, #66ff00, #a80077); 
     -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
-  
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
 }
-
 
 * {
     box-sizing: border-box;
-  }
+}
+
 .row {
     display: flex;
-  }
-  
-  /* Create three equal columns that sits next to each other */
-  .column {
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.column {
     flex: 50%;
     padding: 6%;
-  }
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-  .container_poze {
-    position: relative; /* This is necessary for the absolute positioning of .middle_gradina */
+.container_poze {
+    position: relative;
     width: fit-content;
     height: fit-content;
+    margin: auto;
 }
 
-
-.poza_rosie_1 {
-    transition: .5s ease;
+.poza_rosie_1, .cornhub {
+    transition: transform 0.5s ease, opacity 0.5s ease;
     max-height: 40vh;
     max-width: 40vh;
+    border-radius: 10px;
 }
-
-.cornhub {
-    transition: .5s ease;
-    max-height: 40vh;
-    max-width: 40vh;
-}
-
 
 .middle_poze {
     position: absolute;
@@ -97,24 +98,27 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to make the text more readable */
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensures .middle_gradina covers the entire image */
+    width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .text_poze {
     background-color: #4CAF50;
     color: white;
     font-size: 16px;
-    padding: 16px 32px; 
+    padding: 16px 32px;
+    border-radius: 5px;
 }
 
-.container_poze:hover .poza_gradina {
+.container_poze:hover .poza_rosie_1, .container_poze:hover .cornhub {
     opacity: 0.3;
+    transform: scale(1.05);
 }
 
 .container_poze:hover .middle_poze {
